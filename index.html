@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Risk Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Diabetes Risk Calculator & Awareness App</h1>
+        <p>Calculate Your Diabetes Risk</p>
+
+        <form id="riskForm">
+            <div class="input-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" required>
+            </div>
+            <div class="input-group">
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" required>
+            </div>
+            <div class="input-group">
+                <label for="familyHistory">Family History of Diabetes:</label>
+                <select id="familyHistory">
+                    <option value="no">No</option>
+                    <option value="yes">Yes</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="exercise">Exercise Level:</label>
+                <select id="exercise">
+                    <option value="low">Low</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="high">High</option>
+                </select>
+            </div>
+            <button type="submit">Calculate Risk</button>
+        </form>
+
+        <div id="result" class="hidden">
+            <h2>Your Risk Score:</h2>
+            <p id="riskScore"></p>
+            <h2>Lifestyle Tips:</h2>
+            <ul id="lifestyleTips"></ul>
+        </div>
+
+        <div id="prevention" style="display: none;">
+            <h2>Prevention & Management</h2>
+            <p>Learn about ways to prevent and manage diabetes:</p>
+            <ul>
+                <li>Healthy eating</li>
+                <li>Regular physical activity</li>
+                <li>Weight management</li>
+            </ul>
+            <p class="powered-by">Powered by Diabetes Awareness</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

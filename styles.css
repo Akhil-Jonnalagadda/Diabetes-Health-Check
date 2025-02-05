@@ -1,0 +1,121 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e6f2ff; /* Light blue background */
+    color: #343a40; /* Dark gray text color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("background_image.jpg"); /* Optional background image */
+    background-size: cover; /* Cover the entire background */
+    background-repeat: no-repeat; /* Do not repeat the image */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white container */
+    padding: 40px; /* Increased padding */
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* More prominent shadow */
+    width: 600px; /* Increased width */
+    backdrop-filter: blur(5px); /* Add a blur effect to the background */
+}
+
+h1 {
+    color: #007bff; /* Blue heading */
+    text-align: center;
+    margin-bottom: 30px; /* Increased margin */
+    font-size: 2.5em; /* Larger heading */
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 8px; /* Increased margin */
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    padding: 12px; /* Increased padding */
+    margin-bottom: 20px; /* Increased margin */
+    border: 1px solid #ced4da;
+    border-radius: 8px; /* More rounded corners */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 25px; /* Increased padding */
+    border: none;
+    border-radius: 8px; /* More rounded corners */
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    font-size: 1.1em; /* Slightly larger font */
+    font-weight: 600; /* Semi-bold font weight */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result,
+#prevention {
+    margin-top: 30px; /* Increased margin */
+    padding: 25px; /* Increased padding */
+    border: 1px solid #eee;
+    border-radius: 10px; /* More rounded corners */
+    background-color: rgba(249, 249, 249, 0.8); /* Semi-transparent light gray background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added shadow */
+}
+
+#riskScore {
+    font-weight: bold;
+    margin-bottom: 15px; /* Increased margin */
+    font-size: 1.2em; /* Larger font */
+    color: #d9534f; /* Red color for risk score */
+}
+
+#lifestyleTips,
+#prevention ul {
+    list-style-type: disc;
+    margin-left: 25px; /* Increased margin */
+    line-height: 1.6; /* Improved line height for readability */
+}
+
+#prevention {
+    margin-bottom: 30px; /* Added bottom margin */
+}
+
+.powered-by {
+    text-align: center;
+    margin-top: 25px; /* Increased margin */
+    color: #777;
+}
+
+
+/* Responsive adjustments (example) */
+@media (max-width: 500px) {
+    .container {
+        width: 90%; /* Make container wider on smaller screens */
+        padding: 20px; /* Reduce padding */
+    }
+
+    h1 {
+        font-size: 2em; /* Reduce heading size */
+    }
+
+    input[type="number"],
+    select,
+    button {
+        padding: 10px; /* Reduce padding */
+        font-size: 1em; /* Reduce font size */
+    }
+
+    #result,
+    #prevention {
+        padding: 15px; /* Reduce padding */
+    }
+}
